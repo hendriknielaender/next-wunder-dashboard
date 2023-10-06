@@ -1,0 +1,42 @@
+{
+"graphql_operation_files": [
+{
+"operation_name": "Dragons",
+"api_mount_path": "Dragons",
+"file_path": "Dragons.graphql",
+"content": "query Dragons {spacex_dragons {name active id}}"
+},
+{
+"operation_name": "NewNote",
+"api_mount_path": "NewNote",
+"file_path": "NewNote.graphql",
+"content": "mutation NewNote($text: String!){notes_newNote(text: $text){id}}"
+},
+{
+"operation_name": "NoteByID",
+"api_mount_path": "NoteByID",
+"file_path": "NoteByID.graphql",
+"content": "query NoteByID($id: Int!){notes_noteByID(noteID: $id){id text}}"
+}
+],
+"typescript_operation_files": [
+{
+"operation_name": "UsersGet",
+"api_mount_path": "users/get",
+"file_path": "users/get.ts",
+"module_path": "generated/bundle/operations/users/get"
+},
+{
+"operation_name": "UsersSubscribe",
+"api_mount_path": "users/subscribe",
+"file_path": "users/subscribe.ts",
+"module_path": "generated/bundle/operations/users/subscribe"
+},
+{
+"operation_name": "UsersUpdate",
+"api_mount_path": "users/update",
+"file_path": "users/update.ts",
+"module_path": "generated/bundle/operations/users/update"
+}
+]
+}
