@@ -1,4 +1,6 @@
-import {Avatar, Dropdown, Navbar, Text} from '@nextui-org/react';
+import {Avatar} from '@nextui-org/avatar';
+import {Dropdown} from '@nextui-org/dropdown';
+import {Navbar} from '@nextui-org/navbar';
 import React from 'react';
 import {DarkModeSwitch} from './darkmodeswitch';
 
@@ -21,12 +23,8 @@ export const UserDropdown = () => {
             onAction={(actionKey) => console.log({actionKey})}
          >
             <Dropdown.Item key="profile" css={{height: '$18'}}>
-               <Text b color="inherit" css={{d: 'flex'}}>
                   Signed in as
-               </Text>
-               <Text b color="inherit" css={{d: 'flex'}}>
                   zoey@example.com
-               </Text>
             </Dropdown.Item>
             <Dropdown.Item key="settings" withDivider>
                My Settings

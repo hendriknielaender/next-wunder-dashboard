@@ -1,4 +1,6 @@
-import {Input, Link, Navbar, Text} from '@nextui-org/react';
+import {Input} from '@nextui-org/input';
+import {Link} from '@nextui-org/link';
+import {Navbar} from '@nextui-org/navbar';
 import React from 'react';
 import {FeedbackIcon} from '../icons/navbar/feedback-icon';
 import {GithubIcon} from '../icons/navbar/github-icon';
@@ -97,7 +99,7 @@ export const NavbarWrapper = ({children}: Props) => {
                <Navbar.Content hideIn={'md'}>
                   <Flex align={'center'} css={{gap: '$4'}}>
                      <FeedbackIcon />
-                     <Text span>Feedback?</Text>
+                     Feedback?
                   </Flex>
                </Navbar.Content>
 

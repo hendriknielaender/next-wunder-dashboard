@@ -1,4 +1,7 @@
-import {Button, Divider, Input, Modal, Text} from '@nextui-org/react';
+import {Button} from '@nextui-org/button';
+import {Divider} from '@nextui-org/divider';
+import {Input} from '@nextui-org/input';
+import {Modal} from '@nextui-org/modal';
 import React from 'react';
 import {Flex} from '../styles/flex';
 
@@ -24,9 +27,9 @@ export const AddUser = () => {
             onClose={closeHandler}
          >
             <Modal.Header css={{justifyContent: 'start'}}>
-               <Text id="modal-title" h4>
+               <div id="modal-title" className="text-xl">
                   Add new user
-               </Text>
+               </div>
             </Modal.Header>
             <Divider css={{my: '$5'}} />
             <Modal.Body css={{py: '$10'}}>

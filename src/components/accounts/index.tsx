@@ -1,4 +1,7 @@
-import {Button, Input, Text} from '@nextui-org/react';
+'use client'
+
+import {Button} from '@nextui-org/button';
+import {Input} from '@nextui-org/input';
 import Link from 'next/link';
 import React from 'react';
 import {Breadcrumbs, Crumb, CrumbLink} from '../breadcrumb/breadcrumb.styled';
@@ -33,20 +36,20 @@ export const Accounts = () => {
                <Link href={'/'}>
                   <CrumbLink href="#">Home</CrumbLink>
                </Link>
-               <Text>/</Text>
+               <div>/</div>
             </Crumb>
 
             <Crumb>
                <UsersIcon />
                <CrumbLink href="#">Users</CrumbLink>
-               <Text>/</Text>
+               <div>/</div>
             </Crumb>
             <Crumb>
                <CrumbLink href="#">List</CrumbLink>
             </Crumb>
          </Breadcrumbs>
 
-         <Text h3>All Accounts</Text>
+         <div className="text-xl">All Accounts</div>
          <Flex
             css={{gap: '$8'}}
             align={'center'}

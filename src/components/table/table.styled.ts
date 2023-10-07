@@ -1,4 +1,4 @@
-import {styled} from '@nextui-org/react';
+import styled from 'styled-components';
 
 export const IconButton = styled('button', {
    'dflex': 'center',

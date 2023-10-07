@@ -1,4 +1,4 @@
-import {Dropdown, Text} from '@nextui-org/react';
+import {Dropdown} from '@nextui-org/dropdown';
 import React, {useState} from 'react';
 import {AcmeIcon} from '../icons/acme-icon';
 import {AcmeLogo} from '../icons/acmelogo';
@@ -25,27 +25,12 @@ export const CompaniesDropdown = () => {
                <Flex align={'center'} css={{gap: '$7'}}>
                   {company.logo}
                   <Box>
-                     <Text
-                        h3
-                        size={'$xl'}
-                        weight={'medium'}
-                        css={{
-                           m: 0,
-                           color: '$accents9',
-                           lineHeight: '$lg',
-                           mb: '-$5',
-                        }}
-                     >
+                     <div class="text-xl font-medium m-0 text-grey leading-6 mb-12">
                         {company.name}
-                     </Text>
-                     <Text
-                        span
-                        weight={'medium'}
-                        size={'$xs'}
-                        css={{color: '$accents8'}}
-                     >
+                     </div>
+                    <div class="text-xl font-medium m-0 text-grey leading-6 mb-12">
                         {company.location}
-                     </Text>
+                     </div>
                   </Box>
                   <BottomIcon />
                </Flex>

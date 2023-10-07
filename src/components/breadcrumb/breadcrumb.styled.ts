@@ -1,4 +1,5 @@
-import {Link, styled} from '@nextui-org/react';
+import {Link} from '@nextui-org/link';
+import styled from 'styled-components';
 
 export const Breadcrumbs = styled('ul', {
    listStyle: 'none',

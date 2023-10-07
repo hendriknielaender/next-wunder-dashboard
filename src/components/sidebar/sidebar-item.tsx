@@ -1,4 +1,4 @@
-import {Text, Link} from '@nextui-org/react';
+import {Link} from '@nextui-org/link';
 import NextLink from 'next/link';
 import React from 'react';
 import {useSidebarContext} from '../layout/layout-context';
@@ -54,16 +54,9 @@ export const SidebarItem = ({icon, title, isActive, href = ''}: Props) => {
                align={'center'}
             >
                {icon}
-               <Text
-                  span
-                  weight={'normal'}
-                  size={'$base'}
-                  css={{
-                     color: '$accents9',
-                  }}
-               >
-                  {title}
-               </Text>
+                <div class="font-normal text-base text-gray-900">
+                    {title}
+                </div>
             </Flex>
          </Link>
       </NextLink>

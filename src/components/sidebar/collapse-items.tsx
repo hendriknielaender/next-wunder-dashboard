@@ -1,4 +1,3 @@
-import {Collapse, Text} from '@nextui-org/react';
 import React, {useState} from 'react';
 import {ChevronUpIcon} from '../icons/sidebar/chevron-up-icon';
 import {Flex} from '../styles/flex';
@@ -23,8 +22,6 @@ export const CollapseItems = ({icon, items, title}: Props) => {
          }}
          align={'center'}
       >
-         <Collapse
-            title={
                <Flex
                   css={{
                      'gap': '$6',
@@ -44,17 +41,7 @@ export const CollapseItems = ({icon, items, title}: Props) => {
                   onClick={handleToggle}
                >
                   <Flex css={{gap: '$6'}}>
-                     {icon}
-                     <Text
-                        span
-                        weight={'normal'}
-                        size={'$base'}
-                        css={{
-                           color: '$accents9',
-                        }}
-                     >
-                        {title}
-                     </Text>
+                     {icon} {title}
                   </Flex>
 
                   <ChevronUpIcon
@@ -64,20 +51,7 @@ export const CollapseItems = ({icon, items, title}: Props) => {
                      }}
                   />
                </Flex>
-            }
-            css={{
-               'width': '100%',
-               '& .nextui-collapse-view': {
-                  p: '0',
-               },
-               '& .nextui-collapse-content': {
-                  marginTop: '$1',
-                  padding: '0px',
-               },
-            }}
-            divider={false}
-            showArrow={false}
-         >
+
             {items.map((item, index) => (
                <Flex
                   key={index}
@@ -86,23 +60,9 @@ export const CollapseItems = ({icon, items, title}: Props) => {
                      paddingLeft: '$16',
                   }}
                >
-                  <Text
-                     span
-                     weight={'normal'}
-                     size={'$md'}
-                     css={{
-                        'color': '$accents8',
-                        'cursor': 'pointer',
-                        '&:hover': {
-                           color: '$accents9',
-                        },
-                     }}
-                  >
                      {item}
-                  </Text>
                </Flex>
             ))}
-         </Collapse>
       </Flex>
    );
 };

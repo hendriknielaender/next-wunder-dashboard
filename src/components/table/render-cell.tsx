@@ -1,4 +1,9 @@
-import {Col, Row, User, Text, Tooltip} from '@nextui-org/react';
+import {
+  TableColumn as Col,
+  TableRow as Row,
+} from "@nextui-org/table";
+import {User} from "@nextui-org/user";
+import {Tooltip} from "@nextui-org/tooltip";
 import React from 'react';
 import {DeleteIcon} from '../icons/table/delete-icon';
 import {EditIcon} from '../icons/table/edit-icon';
@@ -25,18 +30,17 @@ export const RenderCell = ({user, columnKey}: Props) => {
          return (
             <Col>
                <Row>
-                  <Text b size={14} css={{tt: 'capitalize'}}>
+                  <div className="text-sm" css={{tt: 'capitalize'}}>
                      {cellValue}
-                  </Text>
+                  </div>
                </Row>
                <Row>
-                  <Text
-                     b
-                     size={13}
+                  <div
+                     className="text-sm"
                      css={{tt: 'capitalize', color: '$accents7'}}
                   >
                      {user.team}
-                  </Text>
+                  </div>
                </Row>
             </Col>
          );

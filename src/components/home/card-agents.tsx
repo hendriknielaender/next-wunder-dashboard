@@ -1,4 +1,6 @@
-import {Avatar, Card, Text} from '@nextui-org/react';
+"use client"
+
+import {Avatar, Card} from '@nextui-org/react';
 import React from 'react';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
@@ -44,17 +46,17 @@ export const CardAgents = () => {
                   {'⭐'}
                   <Box>
                      <Flex direction={'column'}>
-                        <Text h3 css={{margin: 0}}>
+                        <h3>
                            Agents
-                        </Text>
+                        </h3>
                      </Flex>
                   </Box>
                </Flex>
             </Flex>
             <Flex css={{gap: '$6', py: '$4'}} align={'center'}>
-               <Text span size={'$xs'}>
+               <span>
                   Meet your agenda and see their ranks to get the best results
-               </Text>
+               </span>
             </Flex>
             <Flex css={{pt: '$4'}} align={'center'} justify={'center'}>
                <Avatar.Group count={12}>
